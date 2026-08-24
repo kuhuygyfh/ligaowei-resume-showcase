@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="智能终端与智能手表项目演示视频">
+  <meta name="theme-color" content="#08111f">
+  <title>项目演示 · 智能终端与智能手表</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="project-list">
+      <section class="player-card" data-player aria-labelledby="project-one-title">
+        <header class="project-heading">
+          <h2 id="project-one-title">项目一：智能终端</h2>
+        </header>
+
+        <div class="video-wrap">
+          <video class="demo-video" controls playsinline preload="metadata">
+            <source src="%E6%99%BA%E8%83%BD%E7%BB%88%E7%AB%AF.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放，请换用最新版 Chrome、Edge 或 Safari。
+          </video>
+        </div>
+
+        <div class="extended-controls">
+          <button class="control-button backward" type="button" aria-label="智能终端视频后退 10 秒">−10 秒</button>
+
+          <label class="timeline-label" for="timeline-project-one">
+            <span class="sr-only">智能终端视频播放进度</span>
+            <input id="timeline-project-one" class="timeline" type="range" min="0" max="0" value="0" step="0.01">
+          </label>
+
+          <output class="time-display" for="timeline-project-one">00:00 / 00:00</output>
+          <button class="control-button forward" type="button" aria-label="智能终端视频前进 10 秒">+10 秒</button>
+
+          <label class="speed-control" for="speed-project-one">
+            <span>倍速</span>
+            <select id="speed-project-one" class="speed" aria-label="智能终端视频播放倍速">
+              <option value="0.5">0.5×</option>
+              <option value="0.75">0.75×</option>
+              <option value="1" selected>1.0×</option>
+              <option value="1.25">1.25×</option>
+              <option value="1.5">1.5×</option>
+              <option value="2">2.0×</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="status" aria-live="polite">正在读取视频信息…</p>
+      </section>
+
+      <section class="player-card" data-player aria-labelledby="project-two-title">
+        <header class="project-heading">
+          <h2 id="project-two-title">项目二：智能手表</h2>
+        </header>
+
+        <div class="video-wrap">
+          <video class="demo-video" controls playsinline preload="metadata">
+            <source src="%E6%99%BA%E8%83%BD%E6%89%8B%E8%A1%A8.mp4" type="video/mp4">
+            你的浏览器不支持 HTML5 视频播放，请换用最新版 Chrome、Edge 或 Safari。
+          </video>
+        </div>
+
+        <div class="extended-controls">
+          <button class="control-button backward" type="button" aria-label="智能手表视频后退 10 秒">−10 秒</button>
+
+          <label class="timeline-label" for="timeline-project-two">
+            <span class="sr-only">智能手表视频播放进度</span>
+            <input id="timeline-project-two" class="timeline" type="range" min="0" max="0" value="0" step="0.01">
+          </label>
+
+          <output class="time-display" for="timeline-project-two">00:00 / 00:00</output>
+          <button class="control-button forward" type="button" aria-label="智能手表视频前进 10 秒">+10 秒</button>
+
+          <label class="speed-control" for="speed-project-two">
+            <span>倍速</span>
+            <select id="speed-project-two" class="speed" aria-label="智能手表视频播放倍速">
+              <option value="0.5">0.5×</option>
+              <option value="0.75">0.75×</option>
+              <option value="1" selected>1.0×</option>
+              <option value="1.25">1.25×</option>
+              <option value="1.5">1.5×</option>
+              <option value="2">2.0×</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="status" aria-live="polite">正在读取视频信息…</p>
+      </section>
+    </div>
+
+    <footer>
+      <p>建议在 Wi-Fi 或 5G 网络下观看原画视频。</p>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
